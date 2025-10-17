@@ -1,11 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  Hello, World!
-</body>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="/public/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="styles.css">
+
+      <title>Responsive bakery website</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav_logo">Bakery</a>
+
+            <!-- Nav Menu -->
+             <div class="nav_menu" id="nav-menu">
+               <ul class="nav_list">
+                  <li class="nav_item">
+                     <a href="#home" class="nav_link active-link">Inicio</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#news" class="nav_link">Noticias</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#about" class="nav_link">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#favorites" class="nav_link">Favoritos</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#location" class="nav_link">Ubicación</a>
+                  </li>
+               </ul>
+
+               <!-- Close Button -->
+                <div class="nav_close" id="nav-close">
+                  <i class="ri-close-line"></i>
+                </div>
+
+                <img src="/public/bread-4.png" alt="bread image 1" class="nav_img-1">
+                <img src="/public/bread-1.png" alt="bread image 2" class="nav_img-2">
+             </div>
+
+             <!-- Toggle button -->
+              <div class="nav_toggle" id="nav-toggle">
+               <i class="ri-menu-fill"></i>
+              </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <img src="/public/home-bg.jpg" alt="home background image" class="home_bg">
+            <div class="home_shadow"></div>
+            <div class="home_container container grid">
+               <div class="home_data">
+                  <h1 class="home_title">
+                     Los Mejores <br> Panes de Calidad
+                  </h1>
+
+                  <a href="#" class="button">Seleccionar Panes</a>
+                  <img src="/public/bread-1.png" alt="bread image" class="home_bread">
+               </div>
+
+               <div class="home_image">
+                  <img src="/public/home-bread.png" alt="home bread image" class="home_img">
+               </div>
+
+               <footer class="home_footer">
+                  <div class="home_location">
+                     <i class="ri-map-pin-line"></i>
+                     <span>Fray Luis Beltrán 290<br> Puerto Iguazú</span>
+                  </div>
+                  <div class="home_social">
+                     <a href="#" target="_blank" aria-label="Follow us on social media">
+                        <i class="ri-facebook-circle-line"></i>
+                     </a>
+                     <a href="#" target="_blank" aria-label="Follow us on social media">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+                  </div>
+               </footer>
+            </div>
+         </section>
+
+         <!--==================== NEWS ====================-->
+         <section class="new section" id="news">
+            <h2 class="section_title">Nuevos Panes</h2>
+
+            <div class="news_container container grid">
+               <div class="new_content grid">
+                  <article class="new_card">
+                     <div class="new_data">
+                        <h3 class="new_title">Pan de Centeno</h3>
+                        <p class="new_description">Horneado con masa madre saludable y sin gluten  
+                           para una buena nutrición.</p>
+                     </div>
+                     <img src="/public/new-bread-1.png" alt="New Bread 1" class="new_img">
+                  </article>
+                  <article class="new_card">
+                     <div class="new_data">
+                        <h3 class="new_title">Pan Integral</h3>
+                        <p class="new_description">Crujiente y casero, preparado  
+                           con harina orgánica sin levadura.</p>
+                     </div>
+                     <img src="/public/new-bread-2.png" alt="New Bread 2" class="new_img">
+                  </article>
+                  <article class="new_card">
+                     <div class="new_data">
+                        <h3 class="new_title">Pan Multigrano</h3>
+                        <p class="new_description">Delicioso y hecho con diferentes  
+                           granos naturales del campo.</p>
+                     </div>
+                     <img src="/public/new-bread-3.png" alt="New Bread 3" class="new_img">
+                  </article>
+               </div>
+
+               <a href="#" class="new_button button">Ver Más Panes</a>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about_container container grid">
+               <div class="about_data">
+                  <h2 class="section_title">Sobre Nosotros</h2>
+
+                  <p class="about_description"> 
+                     Preparamos todo tipo de panes hechos en casa,  
+                     manteniendo la tradición de usar solo los mejores  
+                     ingredientes elaborados con productos locales siempre que sea posible.  
+                     Contamos con una amplia línea de productos de panadería  
+                     y cafetería recién preparados.
+                  </p>
+
+                  <a href="#" class="button">Saber Más</a>
+
+                  <img src="/public/bread-2.png" alt="about bread" class="about_bread">
+               </div>
+
+               <img src="/public/about-bread.png" alt="about bread image" class="about_img">
+            </div>
+         </section>
+         
+         <!--==================== FAVORITES ====================-->
+         <section class="favorite section" id="favorites">
+            <h2 class="section_title">Favoritos de los Clientes</h2>
+
+            <div class="favorite_container container grid">
+               <article class="favorite_card">
+                  <img src="/public/favorite-bread-1.png" alt="favorite bread 1" class="favorite_img">
+
+                  <div class="favorite_data">
+                     <h3 class="favorite_title">Integral</h3>
+                     <span class="favorite_subtitle">Pan</span>
+                     <p class="favorite_price">$6.00</p>
+                  </div>
+                  <button class="favorite_button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+               <article class="favorite_card">
+                  <img src="/public/favorite-bread-2.png" alt="favorite bread 2" class="favorite_img">
+
+                  <div class="favorite_data">
+                     <h3 class="favorite_title">Centeno</h3>
+                     <span class="favorite_subtitle">Pan</span>
+                     <p class="favorite_price">$8.00</p>
+                  </div>
+                  <button class="favorite_button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+               <article class="favorite_card">
+                  <img src="/public/favorite-bread-3.png" alt="favorite bread 3" class="favorite_img">
+
+                  <div class="favorite_data">
+                     <h3 class="favorite_title">Trigo</h3>
+                     <span class="favorite_subtitle">Pan</span>
+                     <p class="favorite_price">$3.00</p>
+                  </div>
+                  <button class="favorite_button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+               <article class="favorite_card">
+                  <img src="/public/favorite-bread-4.png" alt="favorite bread 4" class="favorite_img">
+
+                  <div class="favorite_data">
+                     <h3 class="favorite_title">Multigrano</h3>
+                     <span class="favorite_subtitle">Pan</span>
+                     <p class="favorite_price">$5.00</p>
+                  </div>
+                  <button class="favorite_button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+               <article class="favorite_card">
+                  <img src="/public/favorite-bread-5.png" alt="favorite bread 5" class="favorite_img">
+
+                  <div class="favorite_data">
+                     <h3 class="favorite_title">Masa Madre</h3>
+                     <span class="favorite_subtitle">Pan</span>
+                     <p class="favorite_price">$7.00</p>
+                  </div>
+                  <button class="favorite_button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+               <article class="favorite_card">
+                  <img src="/public/favorite-bread-6.png" alt="favorite bread 6" class="favorite_img">
+
+                  <div class="favorite_data">
+                     <h3 class="favorite_title">Francés</h3>
+                     <span class="favorite_subtitle">Pan</span>
+                     <p class="favorite_price">$3.00</p>
+                  </div>
+                  <button class="favorite_button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== VISIT ====================-->
+         <section class="visit section" id="location">
+            <div class="visit_container">
+               <img src="/public/visit-bg.jpg" alt="visit background image" class="visit_bg">
+               <div class="visit_shadow"></div>
+
+               <div class="visit_content container grid">
+                  <div class="visit_data">
+                     <h2 class="section_title">Visítanos</h2>
+                     <p class="visit_description">
+                        Descubre el mejor pan, esperamos  
+                        tu visita.
+                     </p>
+
+                     <a href="#" class="button">Ver Ubicación</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer_container container grid">
+            <div>
+               <a href="#" class="footer_logo" aria-label="footer logo">Bakery</a>
+               <p class="footer_description">Hacemos el mejor pan <br> de la ciudad.</p>
+            </div>
+
+            <div class="footer_content grid">
+               <div>
+                  <h3 class="footer_title">Dirección</h3>
+                  <ul class="footer_list">
+                     <li>
+                        <address class="footer_info">AFray Luis Beltrán 290<br> Puerto Iguazú</address>
+                     </li>
+                     <li>
+                        <address class="footer_info">6AM - 11PM</address>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <h3 class="footer_title">Contáctame</h3>
+                  <ul class="footer_list">
+                     <li>
+                        <address class="footer_info">email@email.com</address>
+                     </li>
+                     <li>
+                        <address class="footer_info">+00 123 123 321</address>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <h3 class="footer_title">Síguenos </h3>
+                  <div class="footer_social">
+                     <a href="#" target="_blank" aria-label="">
+                        <i class="ri-facebook-circle-line"></i>
+                     </a>
+                     <a href="#" target="_blank" aria-label="">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <img src="/public/bread-4.png" alt="fotter image 1" class="footer_img-1">
+            <img src="/public/bread-3.png" alt="fotter image 2" class="footer_img-2">
+         </div>
+
+         <!-- Copyright -->
+          <span class="footer_copy">
+            &#169; All Rights Reserved By
+            <a href="https://jhonysouza100.site" class="footer_copy-link">Jhony Souza</a>
+          </span>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" aria-label="scroll up button" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="script.js"></script>
+   </body>
 </html>
