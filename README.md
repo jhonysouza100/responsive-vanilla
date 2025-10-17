@@ -1,3 +1,39 @@
+# Responsive Portfolio Website 1
+
+- Responsive Portfolio Website Using HTML CSS And JavaScript
+- Contains animations when scrolling.
+- Smooth scrolling in each section.
+- Contains a beautiful dark theme.
+- The color of the project can be customized.
+- Sending emails in the contact section.
+- Developed first with the Mobile First methodology, then for desktop.
+- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+
+💙 Go to my website to see more projects like this [jhonysouza100.site](https://jhonysouza100.site) 💙
+
+![preview img](preview.png)
+
+Download more vector logos [Worldvectorlogo.com](https://worldvectorlogo.com)
+
+Setting up an email-sending system often requires a backend server [EmailJs.com](https://dashboard.emailjs.com/admin)
+
+```
+========== CREATE A TEMPLATE ==========
+
+Subject *
+New message from {{user_name}}
+
+Content *
+Names: {{user_name}}
+
+Email: {{user_email}}
+
+Message: {{user_message}}
+
+Best wishes,
+EmailJS team
+```
+
 ## 📦 Vanilla HTML Deployment with Docker & Nginx
 Este repositorio contiene un ejemplo simple de cómo desplegar un sitio web estático construido con HTML puro (vanilla HTML) utilizando Docker y Nginx como servidor web.
 
