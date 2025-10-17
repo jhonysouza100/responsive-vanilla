@@ -1,11 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  Hello, World!
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Responsive Car Website 3</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container nav_container">
+        <a href="#" class="nav_logo">AVENTADOR</a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li>
+              <a href="#home" class="nav_link active-link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav_link">About</a>
+            </li>
+            <li>
+              <a href="#models" class="nav_link">Models</a>
+            </li>
+            <li>
+              <a href="#info" class="nav_link">Information</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav_link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Close Button -->
+           <div class="nav_close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+           </div>
+        </div>
+
+        <!-- Toggle Button -->
+         <div class="nav_toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home grid section" id="home">
+        <img src="/public/home-bg.png" alt="home background image" class="home_bg">
+        <div class="home_gradient"></div>
+
+        <div class="home_data">
+          <h3 class="home_subtitle">CHOOSE YOUR AVENTADOR</h3>
+          <h1 class="home_title">AVENTADOR</h1>
+        </div>
+
+        <div class="home_swiper swiper">
+          <div class="swiper-wrapper">
+            <article class="home_article swiper-slide">
+              <img src="/public/home-car-1.png" alt="home car image" class="home_img">
+            </article>
+            <article class="home_article swiper-slide">
+              <img src="/public/home-car-2.png" alt="home car image" class="home_img">
+            </article>
+            <article class="home_article swiper-slide">
+              <img src="/public/home-car-3.png" alt="home car image" class="home_img">
+            </article>
+            <article class="home_article swiper-slide">
+              <img src="/public/home-car-4.png" alt="home car image" class="home_img">
+            </article>
+          </div>
+        </div>
+
+        <!-- Swiper Navigation -->
+         <div class="swiper-pagination"></div>
+
+        <a href="#about" class="home_button">
+          <span>START</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </a>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about_container container grid">
+          <div class="about_data">
+            <h2 class="section_title about_title">
+              DESIGNED TO
+              <br>
+              <span>GO BEYOND</span>
+              <br>
+              PERFORMANCE
+            </h2>
+            <p class="about_description">
+              Revolutionary thinking is at the heart of
+              every Lamborghini car idea, whether it is
+              the design inspired by the aerospace
+              industry or the technologies applied to
+              natural aspiration.
+            </p>
+            <a href="#" class="button button_ghost">
+              DETAILS
+              <i class="ri-arrow-right-s-line"></i>
+            </a>
+          </div>
+
+          <div class="about_video">
+            <video src="/public/about-vid.mp4" autoplay loop muted class="about_file"></video>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== MODELS ====================-->
+      <section class="models section" id="models">
+        <h2 class="section_title">
+          INPIRED BY
+          <br>
+          COLORS OF NATURE
+        </h2>
+        <div class="models_container container grid">
+          <article class="models_card">
+            <img src="/public/model-car-1.png" alt="car model image" class="models_img">
+            <div class="models_gradient"></div>
+            <div class="models_data">
+              <h3 class="models_name">Silver Aventador</h3>
+              <span class="models_info">355Km/s</span>
+            </div>
+          </article>
+          <article class="models_card">
+            <img src="/public/model-car-2.png" alt="car model image" class="models_img">
+            <div class="models_gradient"></div>
+            <div class="models_data">
+              <h3 class="models_name">Yellow Aventador</h3>
+              <span class="models_info">355Km/s</span>
+            </div>
+          </article>
+          <article class="models_card">
+            <img src="/public/model-car-3.png" alt="car model image" class="models_img">
+            <div class="models_gradient"></div>
+            <div class="models_data">
+              <h3 class="models_name">Blue Aventador</h3>
+              <span class="models_info">355Km/s</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== INFORMATION ====================-->
+      <section class="info section" id="info">
+        <span class="section_subtitle">CHOOSE YOUR AVENTADOR</span>
+        <h2 class="section_title info_title">
+          AVENTADOR LP <br>
+          780-4 ULTIMAE
+        </h2>
+
+        <div class="info_container container grid">
+          <div class="info_content">
+            <h1 class="info_number">780-4</h1>
+            <img src="/public/info-car.png" alt="car info image" class="info_img">
+          </div>
+          <div class="info_data">
+            <div class="info_group">
+              <h3>POWER (KW)</h3>
+              <p>780 CV (574 kW) <br> 8.500 rpm</p>
+            </div>
+            <div class="info_group">
+              <h3>MAX. SPEED</h3>
+              <p>355 km/h</p>
+            </div>
+            <div class="info_group">
+              <h3>0-100 KM/H</h3>
+              <p>2.8 - 2.9s</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact_container container grid">
+          <div class="contact_content">
+            <h2 class="section_title contact_title">
+              SUBSCRIBE TO GET
+              <br>
+              YOUR AVENTADOR
+            </h2>
+
+            <form action="" class="contact_form grid">
+              <div class="contact_inputs grid">
+                <div class="contact_box">
+                  <label for="name" class="contact_label">Names</label>
+                  <input type="text" placeholder="Names" class="contact_input" id="name">
+                </div>
+                <div class="contact_box">
+                  <label for="email" class="contact_label">Email</label>
+                  <input type="email" placeholder="Email" class="contact_input" id="email">
+                </div>
+              </div>
+              <button class="button contact_button">
+                SEND EMAIL
+                <i class="ri-arrow-right-s-line"></i>
+              </button>
+            </form>
+          </div>
+
+          <img src="/public/contact-car.png" alt="contact image" class="contact_img">
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer_container container grid">
+        <a href="#" class="footer_logo">AVENTADOR</a>
+        <ul class="footer_links">
+          <li>
+            <a href="#" class="footer_link">Privacy & Legal</a>
+          </li>
+          <li>
+            <a href="#" class="footer_link">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="footer_link">Locations</a>
+          </li>
+          <li>
+            <a href="#" class="footer_link">News</a>
+          </li>
+          <li>
+            <a href="#" class="footer_link">Forums</a>
+          </li>
+        </ul>
+        <div class="footer_social">
+          <a href="#" target="_blank" class="footer_social-link">
+            <i class="ri-facebook-circle-line"></i>
+          </a>
+          <a href="#" target="_blank" class="footer_social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="#" target="_blank" class="footer_social-link">
+            <i class="ri-twitter-x-line"></i>
+          </a>
+        </div>
+      </div>
+
+      <span class="footer_copy">
+        &#169; All Rights Reserved By JhonySouza100
+      </span>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js"></script>
+  </body>
 </html>
